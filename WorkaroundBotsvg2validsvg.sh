@@ -295,7 +295,7 @@ sed -ri "s/<style( id=\"[[:alnum:]]*\"|)>/<style type=\"text\/css\"\1>/" $i
 
 #solved librsvg-Bug T193929 https://phabricator.wikimedia.org/T193929
 sed -i "s/ xlink:href=\"data:image\/jpg;base64,/ xlink:href=\"data:image\/jpeg;base64,/g" $i
-sed -i "s/ xlink:href=\"data:;base64,\/9j\/4AAQSkZJRgABAgAAZABkAAD\/7AARRHVja3kAAQAEAAAAHgAA/ xlink:href=\"data:image\/jpeg;base64,\/9j\/4AAQSkZJRgABAgAAZABkAAD\/7AARRHVja3kAAQAEAAAAHgAA/" $i
+sed -i "s/ xlink:href=\"data:;base64,\/9j\/4AAQSkZJRgABA/ xlink:href=\"data:image\/jpeg;base64,\/9j\/4AAQSkZJRgABA" $i
 sed -ri "s/ xlink:href=\"data:;base64,( |)iVBORw0KGgoAAAANSUhEUgAA/ xlink:href=\"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAA/" $i
 
 #solved librsvg-Bug T194192 https://phabricator.wikimedia.org/T194192
