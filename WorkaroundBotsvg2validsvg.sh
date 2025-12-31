@@ -80,15 +80,13 @@ if [ $HOSTNAME = LAPTOP-K1FUMMIP ]; then
  PC=locaJK
 elif [ $HOSTNAME = jkalliau-Z87M-D3H ]; then
  PC=locaJK
-elif [ $HOSTNAME = tools-sgebastion-07 ] || [ $HOSTNAME = tools-sgebastion-10 ] || [ $HOSTNAME = svgworkaroundbot-75c6c579d-h5wgp ]; then
- PC=WikiMedia
 elif [ $HOSTNAME = DESKTOP-7VKND0M ]; then
  PC=locaJK
 elif  [ $HOSTNAME = localhost.localdomain ]; then
  PC=locaJK
 elif  [ $HOSTNAME = fedora ]; then
  PC=locaJK
-elif [[ $HOSTNAME =  tools-sgewebgrid-lighttpd-* ]] || [[ $HOSTNAME = tools-sgeweblight-10-20 ]] || [[ $HOSTNAME = svgworkaroundbot-75c6c579d-h5wgp ]]; then
+elif [[ $HOSTNAME =  tools-sgewebgrid-lighttpd-* ]] || [[ $HOSTNAME = tools-sgeweblight-10-20 ]] || [[ $HOSTNAME = svgworkaroundbot-* ]]; then
  PC=WikiMedia
 elif  [ $HOSTNAME = lws84.imws.tuwien.ac.at ]; then
  PC=locaJK
