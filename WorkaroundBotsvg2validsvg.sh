@@ -206,9 +206,9 @@ else
    /data/project/svgworkaroundbot/prgm2/pythonJK/PythonIn/bin/python3.7 -m scour.scour -i $i -o $i2 --keep-unreferenced-defs --remove-descriptions --strip-xml-space  --set-precision=6 --indent=space --nindent=1 --renderer-workaround --set-c-precision=6 --protect-ids-noninkscape  --disable-simplify-colors  --keep-editor-data
    sed -n '1p' $i2 > foobar205
   else
-   #sed -n '1p' $i > foobar152.del
+   sed -n '1p' $i > foobar152.del
    python3 -m scour.scour -i $i -o $i2 --keep-unreferenced-defs --remove-descriptions --strip-xml-space  --set-precision=6 --indent=space --nindent=1 --renderer-workaround --set-c-precision=6 --protect-ids-noninkscape  --disable-simplify-colors  --keep-editor-data
-   #sed -n '1p' $i2 > foobar154.del
+   sed -n '1p' $i2 > foobar154.del
   fi
   cp $i2 l210.svg
   python3 ./FFlow2TextBySed.py $i2 $i3
