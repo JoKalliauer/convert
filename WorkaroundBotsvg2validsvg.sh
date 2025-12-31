@@ -68,7 +68,7 @@ echo k $kerningKerning
 
 echo "\n \n" >> outbut.log
 echo c $SVGCleaner e $EinzeilTags s $ScourScour v $validValid sa $safe k $kerningKerning o $SvgoSvgo >> outbut.log
-echo 1 $1 2 $2 3$3 4 $4 5 $5 6 $6 7 $7 8 $8 >> outbut.log
+echo 1=$1 2=$2 3=$3 4scour=$4 5=$5 6safe=$6 7 $7 8 $8 >> outbut.log
 
 
 #if [ $SVGCleaner = '' ]; then
@@ -79,7 +79,7 @@ if [ $HOSTNAME = LAPTOP-K1FUMMIP ]; then
  PC=locaJK
 elif [ $HOSTNAME = jkalliau-Z87M-D3H ]; then
  PC=locaJK
-elif [ $HOSTNAME = tools-sgebastion-07 ] || [ $HOSTNAME = tools-sgebastion-10 ]; then
+elif [ $HOSTNAME = tools-sgebastion-07 ] || [ $HOSTNAME = tools-sgebastion-10 ] || [ $HOSTNAME = svgworkaroundbot-75c6c579d-h5wgp ]; then
  PC=WikiMedia
 elif [ $HOSTNAME = DESKTOP-7VKND0M ]; then
  PC=locaJK
@@ -87,7 +87,7 @@ elif  [ $HOSTNAME = localhost.localdomain ]; then
  PC=locaJK
 elif  [ $HOSTNAME = fedora ]; then
  PC=locaJK
-elif [[ $HOSTNAME =  tools-sgewebgrid-lighttpd-* ]] || [[ $HOSTNAME = tools-sgeweblight-10-20 ]]; then
+elif [[ $HOSTNAME =  tools-sgewebgrid-lighttpd-* ]] || [[ $HOSTNAME = tools-sgeweblight-10-20 ]] || [[ $HOSTNAME = svgworkaroundbot-75c6c579d-h5wgp ]]; then
  PC=WikiMedia
 elif  [ $HOSTNAME = lws84.imws.tuwien.ac.at ]; then
  PC=locaJK
@@ -178,6 +178,7 @@ if [ $SvgoSvgo = 'YES' ]; then
  mv $i2 $i
 fi
 
+echo validValid=$validValid and ScourScour=$ScourScour  >> outbut.log
 if [ $validValid = 'YES' ];
  then
  export scour
