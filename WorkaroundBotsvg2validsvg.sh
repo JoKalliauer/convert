@@ -67,8 +67,7 @@ echo sa $safe
 echo k $kerningKerning
 
 echo    >> outbut.log
-echo '\n \n' >> outbut.log
-echo "\n \n" >> outbut.log
+echo "----" >> outbut.log
 echo c $SVGCleaner e $EinzeilTags s $ScourScour v $validValid sa $safe k $kerningKerning o $SvgoSvgo >> outbut.log
 echo 1=$1 2=$2 3=$3 4scour=$4 5=$5 6safe=$6 7 $7 8 $8 >> outbut.log
 
@@ -398,4 +397,5 @@ cp -f $i $2
 # python /data/project/shared/pywikipedia/core/scripts/upload.py $i -keep -ignorewarn -noverify -descfile WorkaroundBotsvg2validsvg.sh
 
 # rm $i
+echo "----" >> outbut.log
 
