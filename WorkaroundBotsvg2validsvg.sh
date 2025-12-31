@@ -205,11 +205,9 @@ else
   cp $i l200.svg
   sed -n '1p' $i > foobar201
   if [ $PC = WikiMedia ]; then
-   echo foobar203  >> outbut.log
    sed -n '1p' $i > foobar203
    /data/project/svgworkaroundbot/prgm2/pythonJK/PythonIn/bin/python3.7 -m scour.scour -i $i -o $i2 --keep-unreferenced-defs --remove-descriptions --strip-xml-space  --set-precision=6 --indent=space --nindent=1 --renderer-workaround --set-c-precision=6 --protect-ids-noninkscape  --disable-simplify-colors  --keep-editor-data
    sed -n '1p' $i2 > foobar205
-   echo foobar205  >> outbut.log
   else
    sed -n '1p' $i > foobar152.del
    python3 -m scour.scour -i $i -o $i2 --keep-unreferenced-defs --remove-descriptions --strip-xml-space  --set-precision=6 --indent=space --nindent=1 --renderer-workaround --set-c-precision=6 --protect-ids-noninkscape  --disable-simplify-colors  --keep-editor-data
